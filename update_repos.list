@@ -1,0 +1,5 @@
+# name TAB type TAB local dir
+
+mygitrepo	git	/some/where/mygitrepo
+mysvnrepo	svn	/some/where/mysvnrepo
+mygdriverepo	gdrive	/some/where/mygdriverepo
