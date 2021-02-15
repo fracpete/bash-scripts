@@ -1,0 +1,19 @@
+.gvfs
+.kde
+.cache
+.password-store
+.dbus
+.docker
+.android
+.config/Microsoft/Microsoft Teams
+.gradle/caches
+.gradle/wrapper
+.local/share/Trash
+.m2/repository
+.npm
+.thumbnails
+.thunderbird/Crash Reports
+*~
+*.swp
+.eclipse
+

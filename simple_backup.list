@@ -1,0 +1,8 @@
+# lists directories to back
+# format:
+# name TAB source_dir TAB dir_alias
+# comment line starting with # and empty lines are ignored
+
+#etc	/etc	etc
+home	/home/fracpete	home_fracpete
+
