@@ -18,3 +18,19 @@ ffmpeg -r 1 -i img-%04d.jpg -pix_fmt yuv420p video.mp4
 ```
 
 `img-%04d.jpg` - look for images that start with *img-*, have 4 digits for the index and end with *.jpg*
+
+## Extract audio from a video
+
+* with no reencoding (check with `ffprobe` what the audio format is to get the extension right)
+
+  ```
+  ffmpeg -i input.mkv -vn -acodec copy output-audio.aac
+  ```
+  
+* with reencoding to mp3
+
+  ```
+  ffmpeg -i input.mkv -q:a 0 -map a output-audio.mp3
+  ```
+
+* [source](https://stackoverflow.com/questions/9913032)
