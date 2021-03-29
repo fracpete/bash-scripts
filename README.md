@@ -3,6 +3,8 @@ Collection of bash scripts:
 
 * [check_git_repo.sh](check_git_repo.sh) - checks git repositories for
   their protocol and can switch from https to git
+* [dockerauto.sh](dockerauto.sh) - performs login (and logout) of
+  docker registries defined in `dockerauto.list` (uses insecure password storage!).
 * [ffmpeg.md](ffmpeg.md) - example ffmpeg command-lines
 * [option_parsing.sh](option_parsing.sh) - parses command-line options 
   provided by the user and offers a simple help screen.
