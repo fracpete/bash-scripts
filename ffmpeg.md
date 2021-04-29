@@ -34,3 +34,27 @@ ffmpeg -r 1 -i img-%04d.jpg -pix_fmt yuv420p video.mp4
   ```
 
 * [source](https://stackoverflow.com/questions/9913032)
+
+## Extract one frame at specific position
+
+The timestamp used by `-ss` can either be in *hh:mm:ss.SSS* or *ss.SSS* format:
+
+```
+ffmpeg -i BigBuckBunny.mkv -ss 80 -frames:v 1 BigBuckBunny.jpg
+```
+
+## Extract sub-video from timestamp to timestamp
+
+The timestamps used by `-ss` and `-to` can either be in *hh:mm:ss.SSS* or *ss.SSS* format:
+
+```
+ffmpeg -i BigBuckBunny.mkv -ss 80 -to 90 BigBuckBunny-sub.mp4
+```
+
+## Extract sub-video from timestamp for a certain duration (seconds)
+
+The timestamp used by `-ss` can either be in *hh:mm:ss.SSS* or *ss.SSS* format, `-t` uses seconds:
+
+```
+ffmpeg -i BigBuckBunny.mkv -ss 80 -t 10 BigBuckBunny-sub.mp4
+```
