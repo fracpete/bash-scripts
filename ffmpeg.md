@@ -64,3 +64,9 @@ The timestamp used by `-ss` can either be in *hh:mm:ss.SSS* or *ss.SSS* format, 
 ```bash
 ffmpeg -i BigBuckBunny.mkv -ss 80 -t 10 BigBuckBunny-sub.mp4
 ```
+
+## Convert .wav to .mp3
+
+```bash
+ffmpeg -i file.wav -vn -ar 44100 -ac 2 -b:a 192k file.mp3
+```
