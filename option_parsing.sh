@@ -21,7 +21,7 @@ ROOT=`expr "$0" : '\(.*\)/'`
 FLAG="no"
 ARG=""
 
-# interprete parameters
+# interpret parameters
 while getopts ":hfa:" flag
 do
    case $flag in
