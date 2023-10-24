@@ -6,6 +6,7 @@ Collection of bash scripts:
 * [dockerauto.sh](dockerauto.sh) - performs login (and logout) of
   docker registries defined in `dockerauto.list` (uses insecure password storage!).
 * [ffmpeg.md](ffmpeg.md) - example ffmpeg command-lines
+* [imagemagick.md](imagemagick.md) - example ImagMagick command-lines
 * [option_parsing.sh](option_parsing.sh) - parses command-line options 
   provided by the user and offers a simple help screen.
 * [simple_backup.sh](simple_backup.sh) - script that simplifies the use
