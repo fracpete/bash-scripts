@@ -5,8 +5,6 @@ Collection of bash scripts:
   their protocol and can switch from https to git
 * [dockerauto.sh](dockerauto.sh) - performs login (and logout) of
   docker registries defined in `dockerauto.list` (uses insecure password storage!).
-* [ffmpeg.md](ffmpeg.md) - example ffmpeg command-lines
-* [imagemagick.md](imagemagick.md) - example ImagMagick command-lines
 * [option_parsing.sh](option_parsing.sh) - parses command-line options 
   provided by the user and offers a simple help screen.
 * [simple_backup.sh](simple_backup.sh) - script that simplifies the use
@@ -16,3 +14,8 @@ Collection of bash scripts:
 * [update_repos.sh](update_repos.sh) - for updating local source code 
   repositories (git, svn, gdrive) using a text file specifying the 
   repositories.
+
+Others
+* [bash snippets](snippets.md)
+* [ffmpeg command-lines ](ffmpeg.md)
+* [ImagMagick command-lines](imagemagick.md)
