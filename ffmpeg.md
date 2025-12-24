@@ -65,6 +65,22 @@ The timestamp used by `-ss` can either be in *hh:mm:ss.SSS* or *ss.SSS* format, 
 ffmpeg -i BigBuckBunny.mkv -ss 80 -t 10 BigBuckBunny-sub.mp4
 ```
 
+## Convert video to h264
+
+```bash
+ffmpeg -i input.mp4 -c:v libx264 -preset fast -crf 23 -c:a aac -b:a 192k output_h264.mp4
+```
+
+* [source](https://www.cincopa.com/learn/how-to-encode-videos-to-h-264-h-265-with-ffmpeg)
+
+## Extract subtitles
+
+The following command generates `.srt` text subtitles:
+
+```bash
+ffmpeg -txt_format text -i movie.mkv movie.srt
+```
+
 ## Convert .wav to .mp3
 
 ```bash
