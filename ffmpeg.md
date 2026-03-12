@@ -41,6 +41,22 @@ ffmpeg -r 1 -i img-%04d.jpg -pix_fmt yuv420p video.mp4
 ffmpeg -i BigBuckBunny.mkv -c copy -an BigBuckBunny-no_audio.mkv
 ```
 
+## Extract audio from a video
+
+Extract uncompressed WAV (fast):
+
+```bash
+ffmpeg -i video-file.avi -map 0:a extracted_audio.wav
+```
+
+Extract and convert to MP3 (slower):
+
+```bash
+ffmpeg -i video-file.avi -map 0:a -f mp3 extracted_audio.mp3
+```
+
+* [source](https://ffmpegbyexample.com/examples/5ql9p2tz/extracting_audio_from_video_source/)
+
 ## Extract one frame at specific position
 
 The timestamp used by `-ss` can either be in *hh:mm:ss.SSS* or *ss.SSS* format:
