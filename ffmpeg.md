@@ -102,3 +102,11 @@ ffmpeg -txt_format text -i movie.mkv movie.srt
 ```bash
 ffmpeg -i file.wav -vn -ar 44100 -ac 2 -b:a 192k file.mp3
 ```
+
+## Convert .flac to .mp3 (incl meta-data)
+
+```bash
+ffmpeg -i file.flac -ab 192k -map_metadata 0 -id3v2_version 3 file.mp3
+```
+
+* [source](https://stackoverflow.com/a/26109838)
